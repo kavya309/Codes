@@ -1,0 +1,14 @@
+n,m=input().split()
+n=int(n)
+m=int(m)
+arr=input().split()
+s1=set(input().split())
+s2=set(input().split())
+tp=0
+l1=s1.intersection(arr)
+x=len(l1)
+l2=s2.intersection(arr)
+y=len(l2)
+tp=x-y
+print(tp)
+print(type(arr))

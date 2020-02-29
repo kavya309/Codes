@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+m=input()
+m=int(m)
+l1=input().split()
+nl1=set(map(int,l1))
+n=input()
+n=int(n)
+l2=input().split()
+nl2=set(map(int,l2))
+a=nl1.difference(nl2)
+b=nl2.difference(nl1)
+l=list(a.union(b))
+l.sort()
+for i in l:
+    print(i)
